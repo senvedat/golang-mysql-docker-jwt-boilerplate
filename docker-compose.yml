@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  # db:
+  #   container_name: golang-rest-example-vdt-DB
+  #   image: mysql:latest
+  #   volumes:
+  #     - ./cache/mysql:/var/lib/mysql
+  #     - ./conf-mysql.cnf:/etc/mysql/conf.d/mysql.cnf
+  #   ports:
+  #     - ${MASTER_DB_PORT}:${MASTER_DB_PORT}
+  #   restart: always
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: "password"
+  #     MYSQL_DATABASE: ${MASTER_DB_NAME}
+  server:    
+    container_name: golang-rest-example-vdt
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
+    # depends_on:
+    #   - db
+    # links:
+    #   - db
+    restart: on-failure
