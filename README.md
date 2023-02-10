@@ -5,9 +5,9 @@ A example Docker and JWT powered Rest API project boilerplate of using golang an
 
 ## Suggestions for the project
 
-**Example Postman Collection:** GolangMysqlRestApi.postman_collection.json (In root location, recommended to delete after import)
+**Example Postman Collection:** GolangMysqlRestApi.postman_collection.json (In examples file, recommended to delete after import)
 
-**Example Database:** golang_rest_example.sql (In root location, recommended to delete after import)
+**Example Database:** golang_rest_example.sql (In examples file, recommended to delete after import)
 
 
 ## Tech Stack
